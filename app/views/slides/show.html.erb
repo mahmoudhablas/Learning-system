@@ -1,1 +1,21 @@
-<%= image_tag @slides.urlpage %>
+<div>
+
+<%= image_tag @slide.urlpage, :size => "900x700" %>
+</div>
+<% @comments.each do |f|  %>
+<h1>hfs</h1>
+ <%=f.content %>
+ <br>
+
+<% end %>
+<%= form_for ([@slide, @comments.new]) do |f| %>
+  <p>
+    <%= f.label :title %><br>
+    <%= f.text_field :content %>
+  </p>
+ 
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>
+
