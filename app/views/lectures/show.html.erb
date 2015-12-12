@@ -4,6 +4,11 @@
   <strong>My file:</strong>
   <%= @lecture.my_file %>
 </p>
+  <% @slides.each do  |page| %>
+  <%= image_tag page.urlpage %>
+ <%= link_to 'Show', [@lecture, page] %>
+  <br>	
+  	<% end %>
 
 <%= link_to 'Edit', edit_lecture_path(@lecture) %> |
 <%= link_to 'Back', lectures_path %>
