@@ -1,0 +1,5 @@
+you can use this app in your eduction 
+it is look like face book 
+student and teacher can log in 
+you can uplaod pdf ,it will be split into images 
+and you can add comment for this images
